@@ -26,5 +26,4 @@ public interface CityRepository extends PagingAndSortingRepository<City,Long> {
     @RestResource(path = "postalCode", rel = "postalCode")
     Page<City> findByPostalCode(@Param("q") String postalCode, Pageable pageable);
 
-    
 }
